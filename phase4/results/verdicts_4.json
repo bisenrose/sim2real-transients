@@ -1,0 +1,71 @@
+{
+ "Z1_xgboost_consistent_below_ztf_cv": true,
+ "Z2_xgboost_hybrid_gt_consistent": false,
+ "Z3_xgboost_hybrid_gt_per_survey": false,
+ "Z4_xgboost_hybrid_ge_drop_absmag": false,
+ "Z1_lightgbm_consistent_below_ztf_cv": true,
+ "Z2_lightgbm_hybrid_gt_consistent": false,
+ "Z3_lightgbm_hybrid_gt_per_survey": false,
+ "Z4_lightgbm_hybrid_ge_drop_absmag": false,
+ "Z1_catboost_consistent_below_ztf_cv": true,
+ "Z2_catboost_hybrid_gt_consistent": false,
+ "Z3_catboost_hybrid_gt_per_survey": false,
+ "Z4_catboost_hybrid_ge_drop_absmag": false,
+ "Z1_mlp_consistent_below_ztf_cv": true,
+ "Z2_mlp_hybrid_gt_consistent": true,
+ "Z3_mlp_hybrid_gt_per_survey": false,
+ "Z4_mlp_hybrid_ge_drop_absmag": true,
+ "Z5_selection_gt_none": false,
+ "Z5_selection_gt_random": true,
+ "calibration_ztf_xgboost_consistent": {
+  "transfer_log_loss": 0.6772,
+  "transfer_brier": 0.3482,
+  "transfer_ece": 0.0409
+ },
+ "calibration_ztf_xgboost_hybrid": {
+  "transfer_log_loss": 0.979,
+  "transfer_brier": 0.543,
+  "transfer_ece": 0.0405
+ },
+ "shap_damage_ztf": {
+  "target": "ztf",
+  "abs_peak_mag_rank": 4,
+  "redshift_rank": 1,
+  "top5": [
+   "redshift",
+   "extra_sigma_ZTF_g",
+   "extra_sigma_ZTF_r",
+   "abs_peak_mag",
+   "A_ZTF_g"
+  ]
+ },
+ "A1_predicted_stratified_gt_random_10pct": false,
+ "A1_predicted_stratified_gt_random_20pct": false,
+ "A2_true_stratified_ge_all_usable": false,
+ "acquisition_means": {
+  "random": {
+   "0.05": 0.6683,
+   "0.1": 0.6755,
+   "0.2": 0.6704,
+   "0.4": 0.6741
+  },
+  "predicted_stratified": {
+   "0.05": 0.6311,
+   "0.1": 0.6519,
+   "0.2": 0.6247,
+   "0.4": 0.6647
+  },
+  "uncertainty": {
+   "0.05": 0.6651,
+   "0.1": 0.6517,
+   "0.2": 0.6768,
+   "0.4": 0.6988
+  },
+  "true_stratified": {
+   "0.05": 0.6591,
+   "0.1": 0.6599,
+   "0.2": 0.6806,
+   "0.4": 0.7086
+  }
+ }
+}

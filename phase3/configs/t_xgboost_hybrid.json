@@ -1,0 +1,20 @@
+{
+ "phase": "3",
+ "preregistration": "PREREGISTRATION_3.md (2026-10-19)",
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "name": "t_xgboost_hybrid",
+ "section": "3.1",
+ "model": {
+  "type": "xgboost",
+  "tuned_from": "tuning/xgboost.json"
+ },
+ "preprocessing": "hybrid",
+ "description": "xgboost tuned (nested CV on PLAsTiCC), hybrid"
+}

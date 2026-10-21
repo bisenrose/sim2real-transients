@@ -1,0 +1,25 @@
+# data (never commit)
+DES dataset/
+superphot features/
+*.FITS
+*.fits
+*.bak
+*.tar.gz
+data/raw/
+phase4/bts_catalogue.csv
+# full per-config results (archived separately); keep summary verdicts
+phase*/results/*.json
+!phase*/results/verdicts*.json
+!phase*/results/D3_label_shift.json
+!phase*/results/E1.json
+!phase*/results/quick_checks.json
+!phase*/results/rho.json
+!phase*/results/ztf_*diagnostics.json
+# tooling
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
+catboost_info/
+*.corrupt

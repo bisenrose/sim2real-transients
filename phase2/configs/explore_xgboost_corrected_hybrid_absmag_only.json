@@ -1,0 +1,28 @@
+{
+ "name": "explore_xgboost_corrected_hybrid_absmag_only",
+ "phase": "2.1",
+ "preregistration": "PREREGISTRATION_2.1.md (2026-10-19)",
+ "status": "exploratory diagnostic (uses DES labels; not part of the rule)",
+ "description": "Hybrid with only abs_peak_mag on the shared scale (redshift re-centred)",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "drop_features": [],
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "calibrated_features": [
+  "abs_peak_mag"
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "C1_lowz_absmag_only_gt_hybrid": {
+  "per_model": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "count": "0/4",
+  "supported": false
+ },
+ "C2_random_absmag_only_eq_hybrid": {
+  "per_model": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "count": "4/4",
+  "supported": true
+ },
+ "C3_lowz_hybrid_lt_per_survey": {
+  "per_model": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "count": "0/4",
+  "supported": false
+ },
+ "W1_des_xgboost_weighted_gt_consistent": true,
+ "W2_des_xgboost_in_domain_ge_0.76": true,
+ "W3_ztf_xgboost_weighted_not_better": true,
+ "S1_des_xgboost_stratlearn_all_not_better": true,
+ "S2_des_xgboost_stratlearn_no_survey_gt_consistent": true,
+ "W1_des_lightgbm_weighted_gt_consistent": true,
+ "W2_des_lightgbm_in_domain_ge_0.76": true,
+ "W3_ztf_lightgbm_weighted_not_better": true,
+ "S1_des_lightgbm_stratlearn_all_not_better": true,
+ "S2_des_lightgbm_stratlearn_no_survey_gt_consistent": true,
+ "K1_des_xgboost_bandwidth_hybrid_gt_consistent": true,
+ "K1_des_xgboost_rband_hybrid_gt_consistent": true,
+ "K1_des_lightgbm_bandwidth_hybrid_gt_consistent": true,
+ "K1_des_lightgbm_rband_hybrid_gt_consistent": true,
+ "K2_ztf_xgboost_bandwidth_hybrid_lt_per_survey": true,
+ "K2_ztf_xgboost_rband_hybrid_lt_per_survey": true,
+ "K2_ztf_lightgbm_bandwidth_hybrid_lt_per_survey": false,
+ "K2_ztf_lightgbm_rband_hybrid_lt_per_survey": true,
+ "N_des_sigma02_hybrid_gt_consistent": true,
+ "N_des_sigma05_hybrid_gt_consistent": true,
+ "N3_des_gap_smaller_at_0.05": true,
+ "N3_gaps_hybrid_minus_per_survey": {
+  "02": 0.05999960684747374,
+  "05": -0.004121336283510413
+ }
+}

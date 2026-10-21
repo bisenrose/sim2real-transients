@@ -1,0 +1,40 @@
+{
+ "name": "D2_lowz_I1_lightgbm_per_survey",
+ "phase": "6",
+ "preregistration": "PREREGISTRATION_6.md (2026-10-20)",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "section": "D2",
+ "status": "confirmatory",
+ "target": "plasticc_pseudo",
+ "pseudo_target": {
+  "kind": "lowz_iarich",
+  "z_cut": 0.2,
+  "ia_frac": 0.76,
+  "seed": 0
+ },
+ "model": {
+  "type": "lightgbm",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "per_survey",
+ "target_instrument_shift": {
+  "type": "cadence_noise",
+  "factors": {
+   "time_span": 0.068,
+   "t_0_ZTF_g": 0.015,
+   "t_0_ZTF_r": 0.014,
+   "extra_sigma_ZTF_g": 1.8,
+   "extra_sigma_ZTF_r": 1.3
+  }
+ }
+}

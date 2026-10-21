@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{PLAsTiCC $\rightarrow$ ZTF transfer macro-F1 (classes present in ZTF: SNII 1144, SNIbc 305, SNIa 4755, SLSN-I 60; 5 split seeds)}
+\begin{tabular}{lccccc}
+\hline
+Model & Consistent & Per-survey & Per-survey $-$ abs mag & Hybrid (rule) & ZTF-only CV \\
+\hline
+XGBoost & 0.503 $\pm$ 0.043 & 0.510 $\pm$ 0.015 & 0.494 $\pm$ 0.007 & 0.442 $\pm$ 0.023 & 0.712 $\pm$ 0.010 \\
+LightGBM & 0.517 $\pm$ 0.020 & 0.526 $\pm$ 0.005 & 0.497 $\pm$ 0.008 & 0.454 $\pm$ 0.026 & 0.716 $\pm$ 0.007 \\
+CatBoost & 0.500 $\pm$ 0.034 & 0.506 $\pm$ 0.015 & 0.524 $\pm$ 0.002 & 0.399 $\pm$ 0.043 & 0.695 $\pm$ 0.005 \\
+MLP & 0.192 $\pm$ 0.031 & 0.511 $\pm$ 0.016 & 0.470 $\pm$ 0.017 & 0.495 $\pm$ 0.010 & 0.707 $\pm$ 0.005 \\
+\hline
+\end{tabular}
+\end{table}

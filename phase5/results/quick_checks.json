@@ -1,0 +1,50 @@
+{
+ "support_overlap": {
+  "DES": {
+   "n target": 530,
+   "redshift overlap": 0.921,
+   "abs_peak_mag overlap": 0.966,
+   "target z median": 0.326
+  },
+  "ZTF": {
+   "n target": 6264,
+   "redshift overlap": 0.17,
+   "abs_peak_mag overlap": 0.989,
+   "target z median": 0.059
+  },
+  "PLAsTiCC pseudo low-z": {
+   "n target": 524,
+   "redshift overlap": 0.0,
+   "abs_peak_mag overlap": 0.595,
+   "target z median": 0.087
+  },
+  "PLAsTiCC pseudo random": {
+   "n target": 524,
+   "redshift overlap": 0.874,
+   "abs_peak_mag overlap": 0.876,
+   "target z median": 0.297
+  }
+ },
+ "des_per_class_ci": {
+  "SNII (n=64)": {
+   "Consistent": "0.728 [0.623, 0.820]",
+   "Hybrid rule": "0.636 [0.531, 0.731]"
+  },
+  "SNIbc (n=16)": {
+   "Consistent": "0.214 [0.000, 0.419]",
+   "Hybrid rule": "0.173 [0.000, 0.359]"
+  },
+  "AGN (n=41)": {
+   "Consistent": "0.372 [0.276, 0.466]",
+   "Hybrid rule": "0.673 [0.538, 0.796]"
+  },
+  "SNIa (n=391)": {
+   "Consistent": "0.792 [0.720, 0.842]",
+   "Hybrid rule": "0.898 [0.871, 0.921]"
+  },
+  "SLSN-I (n=18)": {
+   "Consistent": "0.317 [0.000, 0.600]",
+   "Hybrid rule": "0.618 [0.400, 0.800]"
+  }
+ }
+}

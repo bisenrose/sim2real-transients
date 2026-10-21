@@ -1,0 +1,26 @@
+{
+ "name": "remove_hybrid_log_amplitude",
+ "phase": "2.3",
+ "status": "diagnostic (uses DES labels)",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "drop_features": [
+  "log_amplitude"
+ ],
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "description": "Remove log_amplitude, hybrid"
+}

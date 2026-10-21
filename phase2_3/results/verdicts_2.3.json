@@ -1,0 +1,37 @@
+{
+ "R1_risk_beats_shift_consistent": true,
+ "correlations": {
+  "consistent: shift": {
+   "spearman": 0.154,
+   "p": 0.4435
+  },
+  "consistent: ks": {
+   "spearman": 0.193,
+   "p": 0.3349
+  },
+  "consistent: risk": {
+   "spearman": 0.169,
+   "p": 0.3991
+  },
+  "consistent: damage": {
+   "spearman": 0.341,
+   "p": 0.0815
+  },
+  "hybrid: shift": {
+   "spearman": 0.301,
+   "p": 0.1275
+  },
+  "hybrid: ks": {
+   "spearman": 0.21,
+   "p": 0.2937
+  },
+  "hybrid: risk": {
+   "spearman": 0.165,
+   "p": 0.4113
+  },
+  "hybrid: damage": {
+   "spearman": 0.066,
+   "p": 0.7439
+  }
+ }
+}

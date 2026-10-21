@@ -1,0 +1,14 @@
+{
+ "name": "00_legacy_reproduction",
+ "description": "Original pipeline: class 65 as SLSN-I, per-domain scaling, split seed 42",
+ "legacy_class_codes": true,
+ "preprocessing": "per_domain",
+ "split_seeds": [
+  42
+ ],
+ "model": {
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05
+ }
+}

@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{PLAsTiCC → YSE transfer macro-F1 over classes with >= 10 objects, all spectroscopic YSE objects; class counts {'SNII': 102, 'SNIbc': 27, 'SNIa': 248, 'SLSN-I': 2} (5 split seeds)}
+\begin{tabular}{lcccccccc}
+\hline
+Model & Consistent & Per-survey & Per-survey $-$ abs mag & Redshift only shared & M\_peak only shared & Hybrid rule & Hybrid + brightness shared & YSE-only CV (pooled out-of-fold) \\
+\hline
+XGBoost & 0.586 $\pm$ 0.008 & 0.518 $\pm$ 0.020 & 0.478 $\pm$ 0.015 & 0.472 $\pm$ 0.024 & 0.521 $\pm$ 0.014 & 0.463 $\pm$ 0.029 & 0.546 $\pm$ 0.011 & 0.599 $\pm$ 0.015 \\
+LightGBM & 0.571 $\pm$ 0.012 & 0.511 $\pm$ 0.020 & 0.475 $\pm$ 0.009 & 0.481 $\pm$ 0.016 & 0.520 $\pm$ 0.013 & 0.471 $\pm$ 0.024 & 0.535 $\pm$ 0.006 & 0.596 $\pm$ 0.026 \\
+CatBoost & 0.587 $\pm$ 0.007 & 0.519 $\pm$ 0.008 & 0.497 $\pm$ 0.010 & 0.455 $\pm$ 0.034 & 0.515 $\pm$ 0.002 & 0.449 $\pm$ 0.027 & 0.520 $\pm$ 0.014 & 0.550 $\pm$ 0.013 \\
+MLP & 0.273 $\pm$ 0.016 & 0.522 $\pm$ 0.013 & 0.474 $\pm$ 0.016 & 0.549 $\pm$ 0.016 & 0.507 $\pm$ 0.010 & 0.517 $\pm$ 0.011 & 0.352 $\pm$ 0.052 & 0.574 $\pm$ 0.017 \\
+\hline
+\end{tabular}
+\end{table}

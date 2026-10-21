@@ -1,0 +1,15 @@
+{
+ "Q1_selection_gt_none": true,
+ "Q2_selection_gt_random_control": true,
+ "Q3_abs_mag_shift_shrinks": true,
+ "Q4_SNIa_largest_gain": false,
+ "per_class_gains": {
+  "SNII": -0.0053,
+  "SNIbc": 0.0209,
+  "AGN": 0.0787,
+  "SNIa": 0.0605,
+  "SLSN-I": 0.2587
+ },
+ "robustness_lightgbm_Q1": true,
+ "robustness_lightgbm_Q2": true
+}

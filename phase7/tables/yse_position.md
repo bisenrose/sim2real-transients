@@ -1,0 +1,7 @@
+**Where YSE sits between DES and ZTF (label-free)**
+
+| Target | N | median z | amplitude ratio to PLAsTiCC | redshift overlap | M_peak overlap |
+| --- | --- | --- | --- | --- | --- |
+| DES | 530 | 0.326 | 2.3 | 0.92 | 0.96 |
+| YSE | 379 | 0.061 | 28.6 | 0.32 | 0.97 |
+| ZTF | 6264 | 0.059 | 45.1 | 0.17 | 0.99 |

@@ -1,0 +1,26 @@
+{
+ "name": "remove_consistent_redshift",
+ "phase": "2.3",
+ "status": "diagnostic (uses DES labels)",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "consistent",
+ "drop_features": [
+  "redshift"
+ ],
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "description": "Remove redshift, consistent"
+}

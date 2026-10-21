@@ -1,0 +1,29 @@
+{
+ "name": "N_ztf_xgboost_sigma05_per_survey",
+ "phase": "5",
+ "preregistration": "PREREGISTRATION_5.md (2026-10-19)",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "section": "N",
+ "status": "pre-registered",
+ "target": "ztf",
+ "des_label_policy": "corrected",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "target_redshift_noise": {
+  "sigma": 0.05,
+  "seed": 0
+ },
+ "preprocessing": "per_survey"
+}

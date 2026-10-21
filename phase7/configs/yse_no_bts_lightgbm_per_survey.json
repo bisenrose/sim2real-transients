@@ -1,0 +1,23 @@
+{
+ "name": "yse_no_bts_lightgbm_per_survey",
+ "phase": "7",
+ "preregistration": "PREREGISTRATION_7.md (2026-10-20)",
+ "status": "robustness",
+ "target": "yse_no_bts",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "model": {
+  "type": "lightgbm",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "per_survey"
+}

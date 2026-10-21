@@ -1,0 +1,31 @@
+{
+ "name": "explore_xgboost_corrected_hybrid_plus_extra_sigma",
+ "phase": "2.1",
+ "preregistration": "PREREGISTRATION_2.1.md (2026-10-19)",
+ "status": "exploratory diagnostic (uses DES labels; not part of the rule)",
+ "description": "Hybrid, but also keep extra_sigma_g/r on the shared scale: does re-centring them help or hurt?",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "drop_features": [],
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "calibrated_features": [
+  "redshift",
+  "abs_peak_mag",
+  "extra_sigma_ZTF_g",
+  "extra_sigma_ZTF_r"
+ ]
+}

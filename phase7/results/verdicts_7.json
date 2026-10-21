@@ -1,0 +1,54 @@
+{
+ "Y1_xgboost_consistent_below_yse_cv": true,
+ "Y1_lightgbm_consistent_below_yse_cv": true,
+ "Y1_catboost_consistent_below_yse_cv": false,
+ "Y1_mlp_consistent_below_yse_cv": true,
+ "Y2_plus_brightness_gt_hybrid": {
+  "per_tree_model": [
+   true,
+   true,
+   true
+  ],
+  "supported": true
+ },
+ "Y3_plus_brightness_ge_per_survey": {
+  "per_tree_model": [
+   true,
+   true,
+   true
+  ],
+  "supported": true
+ },
+ "Y4_gain_larger_near": {
+  "per_tree_model": [
+   false,
+   false,
+   false
+  ],
+  "supported": false
+ },
+ "Y5_near_hybrid_lt_per_survey": {
+  "per_tree_model": [
+   true,
+   true,
+   true
+  ],
+  "supported": true
+ },
+ "Y6_far_hybrid_ge_per_survey": {
+  "per_tree_model": [
+   true,
+   true,
+   true
+  ],
+  "supported": true
+ },
+ "magnitude_check_ours_minus_yse": {
+  "median": 0.08109488172628332,
+  "scatter_1.4826MAD": 0.1900580591407439,
+  "n": 379
+ },
+ "n_in_bts": 151,
+ "n_yse": 379,
+ "median_z": 0.061
+}

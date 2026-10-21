@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Which features keep the shared scale: transfer macro-F1 on DES (5 split seeds)}
+\begin{tabular}{lccccc}
+\hline
+Model & Nothing shared (per-survey) & Redshift only shared & M\_peak only shared & Both shared (hybrid rule) & Both + brightness shared \\
+\hline
+XGBoost & 0.528 $\pm$ 0.005 & 0.527 $\pm$ 0.010 & 0.607 $\pm$ 0.012 & 0.602 $\pm$ 0.012 & 0.597 $\pm$ 0.019 \\
+LightGBM & 0.518 $\pm$ 0.009 & 0.530 $\pm$ 0.007 & -- & 0.603 $\pm$ 0.016 & 0.598 $\pm$ 0.018 \\
+CatBoost & 0.517 $\pm$ 0.010 & 0.526 $\pm$ 0.008 & -- & 0.589 $\pm$ 0.012 & 0.617 $\pm$ 0.020 \\
+MLP & 0.564 $\pm$ 0.019 & 0.566 $\pm$ 0.023 & -- & 0.617 $\pm$ 0.022 & 0.661 $\pm$ 0.015 \\
+\hline
+\end{tabular}
+\end{table}

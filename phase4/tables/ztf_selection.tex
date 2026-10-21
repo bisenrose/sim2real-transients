@@ -1,0 +1,13 @@
+\begin{table}
+\centering
+\caption{Simulated ZTF brightness selection on PLAsTiCC training data}
+\begin{tabular}{lccc}
+\hline
+Training selection (XGBoost, consistent) & Transfer F1 & abs mag KS vs ZTF & abs mag median gap \\
+\hline
+None & 0.503 $\pm$ 0.043 & 0.21 $\pm$ 0.00 & -0.29 $\pm$ 0.02 \\
+ZTF-matched selection & 0.448 $\pm$ 0.025 & 0.24 $\pm$ 0.02 & 0.30 $\pm$ 0.05 \\
+Random, same size & 0.220 $\pm$ 0.046 & 0.28 $\pm$ 0.07 & -0.20 $\pm$ 0.56 \\
+\hline
+\end{tabular}
+\end{table}

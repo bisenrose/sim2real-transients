@@ -1,0 +1,15 @@
+\begin{table}
+\centering
+\caption{Simulated DES selection on PLAsTiCC training data: XGBoost, consistent preprocessing (5 split seeds)}
+\begin{tabular}{lccccc}
+\hline
+Training selection & N train & PLAsTiCC F1 & Transfer F1 & abs mag KS & abs mag median gap (DES − train) \\
+\hline
+None & 3625 & 0.785 $\pm$ 0.007 & 0.488 $\pm$ 0.023 & 0.35 $\pm$ 0.00 & -1.10 $\pm$ 0.02 \\
+Logistic (DES-matched) & 1181 & 0.727 $\pm$ 0.013 & 0.571 $\pm$ 0.009 & 0.22 $\pm$ 0.01 & -0.44 $\pm$ 0.02 \\
+Random, same size & 1181 & 0.750 $\pm$ 0.017 & 0.455 $\pm$ 0.033 & 0.35 $\pm$ 0.01 & -1.11 $\pm$ 0.08 \\
+Hard cut (DES 99th pct) & 2325 & 0.738 $\pm$ 0.003 & 0.546 $\pm$ 0.014 & 0.23 $\pm$ 0.00 & -0.47 $\pm$ 0.01 \\
+Random, same size & 2325 & 0.768 $\pm$ 0.009 & 0.484 $\pm$ 0.007 & 0.35 $\pm$ 0.01 & -1.05 $\pm$ 0.04 \\
+\hline
+\end{tabular}
+\end{table}

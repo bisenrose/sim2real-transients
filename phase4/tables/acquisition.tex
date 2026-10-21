@@ -1,0 +1,15 @@
+\begin{table}
+\centering
+\caption{Macro-F1 on the held-out DES test set (159 objects) after acquiring labels from the pool (371); 10 repeats}
+\begin{tabular}{lcccc}
+\hline
+Strategy & 5% of pool & 10% of pool & 20% of pool & 40% of pool \\
+\hline
+No acquisition & 0.646 $\pm$ 0.021 &  &  &  \\
+Random & 0.668 $\pm$ 0.033 & 0.676 $\pm$ 0.033 & 0.670 $\pm$ 0.046 & 0.674 $\pm$ 0.029 \\
+Predicted-class stratified & 0.631 $\pm$ 0.036 & 0.652 $\pm$ 0.047 & 0.625 $\pm$ 0.041 & 0.665 $\pm$ 0.038 \\
+Uncertainty & 0.665 $\pm$ 0.019 & 0.652 $\pm$ 0.016 & 0.677 $\pm$ 0.032 & 0.699 $\pm$ 0.024 \\
+True-class stratified (upper bound) & 0.659 $\pm$ 0.027 & 0.660 $\pm$ 0.023 & 0.681 $\pm$ 0.010 & 0.709 $\pm$ 0.022 \\
+\hline
+\end{tabular}
+\end{table}

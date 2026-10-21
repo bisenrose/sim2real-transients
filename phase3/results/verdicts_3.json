@@ -1,0 +1,52 @@
+{
+ "T1_xgboost_tuned_hybrid_gt_consistent": true,
+ "T2_xgboost_in_domain_change_lt_0.03": true,
+ "T1_lightgbm_tuned_hybrid_gt_consistent": true,
+ "T2_lightgbm_in_domain_change_lt_0.03": true,
+ "T1_catboost_tuned_hybrid_gt_consistent": true,
+ "T2_catboost_in_domain_change_lt_0.03": true,
+ "T1_mlp_tuned_hybrid_gt_consistent": true,
+ "B1_xgboost_hybrid_gt_reweighting": true,
+ "B2_xgboost_hybrid_gt_coral": true,
+ "B1_lightgbm_hybrid_gt_reweighting": true,
+ "B2_lightgbm_hybrid_gt_coral": true,
+ "paired_bootstrap": {
+  "Hybrid \u2212 consistent": [
+   0.11492773531508246,
+   0.027434310633058737,
+   0.20890138559435328,
+   0.9956
+  ],
+  "Hybrid \u2212 reweighting": [
+   0.11492773531508246,
+   0.027434310633058737,
+   0.20890138559435328,
+   0.9956
+  ],
+  "Hybrid \u2212 reweighting (no survey features)": [
+   0.13326217578984603,
+   0.04003678428721405,
+   0.22683801471955672,
+   0.9984
+  ],
+  "Hybrid \u2212 CORAL": [
+   0.12856041593719134,
+   0.04119974519434823,
+   0.21443785295208945,
+   0.9968
+  ],
+  "Hybrid \u2212 DES-matched selection": [
+   0.03200703120057694,
+   -0.030923868651722804,
+   0.0950303635858588,
+   0.8488
+  ],
+  "Tuned: hybrid \u2212 consistent": [
+   0.10938378018642839,
+   0.03416588249019589,
+   0.19170075710537113,
+   0.9982
+  ]
+ },
+ "C1_hybrid_better_log_loss": true
+}

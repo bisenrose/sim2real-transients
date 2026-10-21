@@ -1,0 +1,17 @@
+{
+ "name": "01_legacy_drop_absmag",
+ "description": "Original pipeline minus abs_peak_mag",
+ "legacy_class_codes": true,
+ "preprocessing": "per_domain",
+ "split_seeds": [
+  42
+ ],
+ "model": {
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05
+ },
+ "drop_features": [
+  "abs_peak_mag"
+ ]
+}

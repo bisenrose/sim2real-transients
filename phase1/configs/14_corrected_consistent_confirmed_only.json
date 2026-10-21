@@ -1,0 +1,28 @@
+{
+ "name": "14_corrected_consistent_confirmed_only",
+ "description": "New baseline, DES restricted to confident spectroscopic types (no '?')",
+ "preprocessing": "consistent",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "model": {
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "des_cv": true,
+ "des_model": {
+  "n_estimators": 200,
+  "max_depth": 4,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "des_label_policy": "confirmed_only"
+}

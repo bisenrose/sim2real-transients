@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Which features keep the shared scale: transfer macro-F1 on ZTF (5 split seeds)}
+\begin{tabular}{lccccc}
+\hline
+Model & Nothing shared (per-survey) & Redshift only shared & M\_peak only shared & Both shared (hybrid rule) & Both + brightness shared \\
+\hline
+XGBoost & 0.510 $\pm$ 0.015 & 0.449 $\pm$ 0.015 & 0.529 $\pm$ 0.021 & 0.442 $\pm$ 0.023 & 0.552 $\pm$ 0.010 \\
+LightGBM & 0.526 $\pm$ 0.005 & 0.492 $\pm$ 0.011 & 0.530 $\pm$ 0.023 & 0.454 $\pm$ 0.026 & 0.538 $\pm$ 0.010 \\
+CatBoost & 0.506 $\pm$ 0.015 & 0.400 $\pm$ 0.042 & 0.553 $\pm$ 0.020 & 0.399 $\pm$ 0.043 & 0.516 $\pm$ 0.015 \\
+MLP & 0.511 $\pm$ 0.016 & 0.525 $\pm$ 0.012 & 0.452 $\pm$ 0.019 & 0.495 $\pm$ 0.010 & 0.244 $\pm$ 0.037 \\
+\hline
+\end{tabular}
+\end{table}

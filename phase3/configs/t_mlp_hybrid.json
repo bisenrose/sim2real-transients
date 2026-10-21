@@ -1,0 +1,20 @@
+{
+ "phase": "3",
+ "preregistration": "PREREGISTRATION_3.md (2026-10-19)",
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "name": "t_mlp_hybrid",
+ "section": "3.1",
+ "model": {
+  "type": "mlp",
+  "tuned_from": "tuning/mlp.json"
+ },
+ "preprocessing": "hybrid",
+ "description": "mlp tuned (nested CV on PLAsTiCC), hybrid"
+}

@@ -1,0 +1,20 @@
+{
+ "R1_xgboost_near6_none_ztf_pattern": false,
+ "R2_xgboost_near3_none_ztf_pattern": false,
+ "R3_xgboost_control_cal10_hybrid_lt_per_survey": false,
+ "R4_xgboost_control_season_rescaling_gt_consistent": false,
+ "R5_xgboost_near6_cal10_ztf_pattern": false,
+ "R1_lightgbm_near6_none_ztf_pattern": false,
+ "R2_lightgbm_near3_none_ztf_pattern": false,
+ "R3_lightgbm_control_cal10_hybrid_lt_per_survey": false,
+ "R4_lightgbm_control_season_rescaling_gt_consistent": false,
+ "R5_lightgbm_near6_cal10_ztf_pattern": false,
+ "R1_supported": false,
+ "R2_supported": false,
+ "R3_supported": false,
+ "R4_supported": false,
+ "R5_supported": false,
+ "E1a_noise_cadence_ks_yse_lt_des": false,
+ "E1b_noise_cadence_auc_yse_lt_des": false,
+ "E1c_relative_noise_ks_yse_lt_des": true
+}

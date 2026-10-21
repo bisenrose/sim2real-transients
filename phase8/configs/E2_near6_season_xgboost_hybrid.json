@@ -1,0 +1,42 @@
+{
+ "name": "E2_near6_season_xgboost_hybrid",
+ "phase": "8",
+ "preregistration": "PREREGISTRATION_8.md (2026-10-20)",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "target": "plasticc_pseudo",
+ "pseudo_target": {
+  "kind": "iarich_random",
+  "z_cut": 0.2,
+  "ia_frac": 0.76,
+  "seed": 0
+ },
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "target_population_shift": {
+  "type": "move_nearer",
+  "factor": 6
+ },
+ "target_instrument_shift": {
+  "type": "cadence_noise",
+  "factors": {
+   "time_span": 0.068,
+   "t_0_ZTF_g": 0.015,
+   "t_0_ZTF_r": 0.014,
+   "extra_sigma_ZTF_g": 3.0,
+   "extra_sigma_ZTF_r": 3.0
+  }
+ }
+}

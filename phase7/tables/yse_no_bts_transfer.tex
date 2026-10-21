@@ -1,0 +1,12 @@
+\begin{table}
+\centering
+\caption{PLAsTiCC → YSE transfer macro-F1 over classes with >= 10 objects, excluding objects also in ZTF BTS (robustness); class counts {'SNII': 75, 'SNIbc': 16, 'SNIa': 136, 'SLSN-I': 1} (5 split seeds)}
+\begin{tabular}{lcccccccc}
+\hline
+Model & Consistent & Per-survey & Per-survey $-$ abs mag & Redshift only shared & M\_peak only shared & Hybrid rule & Hybrid + brightness shared & YSE-only CV (pooled out-of-fold) \\
+\hline
+XGBoost & 0.599 $\pm$ 0.016 & 0.533 $\pm$ 0.023 & -- & -- & -- & 0.448 $\pm$ 0.020 & 0.541 $\pm$ 0.007 & 0.544 $\pm$ 0.013 \\
+LightGBM & 0.584 $\pm$ 0.010 & 0.519 $\pm$ 0.020 & -- & -- & -- & 0.468 $\pm$ 0.012 & 0.527 $\pm$ 0.010 & 0.552 $\pm$ 0.012 \\
+\hline
+\end{tabular}
+\end{table}

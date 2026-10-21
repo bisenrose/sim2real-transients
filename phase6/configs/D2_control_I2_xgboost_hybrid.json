@@ -1,0 +1,34 @@
+{
+ "name": "D2_control_I2_xgboost_hybrid",
+ "phase": "6",
+ "preregistration": "PREREGISTRATION_6.md (2026-10-20)",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "section": "D2",
+ "status": "confirmatory",
+ "target": "plasticc_pseudo",
+ "pseudo_target": {
+  "kind": "iarich_random",
+  "z_cut": 0.2,
+  "ia_frac": 0.76,
+  "seed": 0
+ },
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "target_instrument_shift": {
+  "type": "flux_calibration",
+  "delta_mag": 0.3
+ }
+}

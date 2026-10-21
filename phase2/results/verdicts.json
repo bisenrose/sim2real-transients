@@ -1,0 +1,63 @@
+{
+ "xgboost_corrected": {
+  "status": "development (rule found here; exploratory)",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "lightgbm_corrected": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "catboost_corrected": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "mlp_corrected": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "xgboost_confirmed_only": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "lightgbm_confirmed_only": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "catboost_confirmed_only": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "mlp_confirmed_only": {
+  "status": "confirmatory",
+  "P1_hybrid_gt_consistent": true,
+  "P2_hybrid_gt_per_survey": true,
+  "P3_hybrid_ge_drop_absmag": true
+ },
+ "P4_P5_diagnostic": {
+  "P4_abs_peak_mag_rank_1": false,
+  "abs_peak_mag_rank": 2,
+  "P5_redshift_top5": false,
+  "redshift_rank": 6,
+  "top5": [
+   "extra_sigma_ZTF_g",
+   "abs_peak_mag",
+   "extra_sigma_ZTF_r",
+   "A_ZTF_r",
+   "A_ZTF_g"
+  ]
+ }
+}

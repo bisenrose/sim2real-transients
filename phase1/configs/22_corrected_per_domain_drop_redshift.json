@@ -1,0 +1,22 @@
+{
+ "name": "22_corrected_per_domain_drop_redshift",
+ "description": "Per-domain scaling minus redshift",
+ "preprocessing": "per_domain",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "model": {
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "drop_features": [
+  "redshift"
+ ]
+}

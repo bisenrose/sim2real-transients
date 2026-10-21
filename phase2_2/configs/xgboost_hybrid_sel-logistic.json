@@ -1,0 +1,28 @@
+{
+ "phase": "2.2",
+ "preregistration": "PREREGISTRATION_2.2.md (2026-10-19)",
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "record_shift": true,
+ "name": "xgboost_hybrid_sel-logistic",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "train_selection": {
+  "type": "logistic"
+ },
+ "status": "secondary",
+ "description": "XGBoost, hybrid, training selection: logistic"
+}

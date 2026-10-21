@@ -1,0 +1,34 @@
+{
+ "F1_ztf_redshift_only_lt_absmag_only": {
+  "per_model": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "supported": true
+ },
+ "F2_ztf_plus_brightness_gt_hybrid": {
+  "per_model": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "supported": true
+ },
+ "T1_xgboost_control_I1_per_survey_gt_consistent": false,
+ "T1_xgboost_control_I1_hybrid_gt_consistent": false,
+ "T2_xgboost_control_I2_hybrid_lt_per_survey": false,
+ "T3_xgboost_lowz_I2_hybrid_lt_per_survey": false,
+ "T4_xgboost_lowz_I1_hybrid_gt_per_survey": true,
+ "T5_xgboost_lowz_none_hybrid_gt_per_survey": true,
+ "T1_lightgbm_control_I1_per_survey_gt_consistent": false,
+ "T1_lightgbm_control_I1_hybrid_gt_consistent": false,
+ "T2_lightgbm_control_I2_hybrid_lt_per_survey": false,
+ "T3_lightgbm_lowz_I2_hybrid_lt_per_survey": false,
+ "T4_lightgbm_lowz_I1_hybrid_gt_per_survey": true,
+ "T5_lightgbm_lowz_none_hybrid_gt_per_survey": true,
+ "SS1_des_hybrid_n100_within_full": false,
+ "SS2_des_hybrid_n25_below_full": true
+}

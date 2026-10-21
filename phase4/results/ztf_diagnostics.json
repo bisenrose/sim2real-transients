@@ -1,0 +1,147 @@
+{
+ "magnitude_check": [
+  {
+   "Light-curve source": "all",
+   "n": 6264.0,
+   "median \u0394 apparent (ours \u2212 BTS)": 0.12518958144631043,
+   "scatter \u0394 apparent": 0.16361808764809116,
+   "median \u0394 absolute (ours \u2212 BTS)": 0.14347491796290335,
+   "scatter \u0394 absolute": 0.20188667596214133
+  },
+  {
+   "Light-curve source": "detections",
+   "n": 4362.0,
+   "median \u0394 apparent (ours \u2212 BTS)": 0.1679918550103796,
+   "scatter \u0394 apparent": 0.1217379260173893,
+   "median \u0394 absolute (ours \u2212 BTS)": 0.18821672209918994,
+   "scatter \u0394 absolute": 0.17389963152932156
+  },
+  {
+   "Light-curve source": "forced",
+   "n": 1902.0,
+   "median \u0394 apparent (ours \u2212 BTS)": -0.045454171527978815,
+   "scatter \u0394 apparent": 0.08566249720830356,
+   "median \u0394 absolute (ours \u2212 BTS)": -0.02019418570085918,
+   "scatter \u0394 absolute": 0.16952692548684575
+  }
+ ],
+ "f1_by_source": [
+  {
+   "Model / preprocessing": "xgboost / consistent",
+   "detections (n=4362)": "0.508 \u00b1 0.042",
+   "forced (n=1902)": "0.495 \u00b1 0.044"
+  },
+  {
+   "Model / preprocessing": "xgboost / per_survey",
+   "detections (n=4362)": "0.527 \u00b1 0.020",
+   "forced (n=1902)": "0.473 \u00b1 0.013"
+  },
+  {
+   "Model / preprocessing": "xgboost / per_survey_drop_absmag",
+   "detections (n=4362)": "0.497 \u00b1 0.015",
+   "forced (n=1902)": "0.481 \u00b1 0.017"
+  },
+  {
+   "Model / preprocessing": "xgboost / hybrid",
+   "detections (n=4362)": "0.443 \u00b1 0.017",
+   "forced (n=1902)": "0.439 \u00b1 0.036"
+  },
+  {
+   "Model / preprocessing": "lightgbm / consistent",
+   "detections (n=4362)": "0.518 \u00b1 0.022",
+   "forced (n=1902)": "0.516 \u00b1 0.027"
+  },
+  {
+   "Model / preprocessing": "lightgbm / per_survey",
+   "detections (n=4362)": "0.538 \u00b1 0.006",
+   "forced (n=1902)": "0.498 \u00b1 0.019"
+  },
+  {
+   "Model / preprocessing": "lightgbm / per_survey_drop_absmag",
+   "detections (n=4362)": "0.503 \u00b1 0.007",
+   "forced (n=1902)": "0.482 \u00b1 0.018"
+  },
+  {
+   "Model / preprocessing": "lightgbm / hybrid",
+   "detections (n=4362)": "0.449 \u00b1 0.027",
+   "forced (n=1902)": "0.463 \u00b1 0.029"
+  },
+  {
+   "Model / preprocessing": "catboost / consistent",
+   "detections (n=4362)": "0.494 \u00b1 0.033",
+   "forced (n=1902)": "0.499 \u00b1 0.041"
+  },
+  {
+   "Model / preprocessing": "catboost / per_survey",
+   "detections (n=4362)": "0.531 \u00b1 0.019",
+   "forced (n=1902)": "0.460 \u00b1 0.015"
+  },
+  {
+   "Model / preprocessing": "catboost / per_survey_drop_absmag",
+   "detections (n=4362)": "0.543 \u00b1 0.007",
+   "forced (n=1902)": "0.484 \u00b1 0.011"
+  },
+  {
+   "Model / preprocessing": "catboost / hybrid",
+   "detections (n=4362)": "0.392 \u00b1 0.048",
+   "forced (n=1902)": "0.420 \u00b1 0.033"
+  },
+  {
+   "Model / preprocessing": "mlp / consistent",
+   "detections (n=4362)": "0.196 \u00b1 0.030",
+   "forced (n=1902)": "0.184 \u00b1 0.038"
+  },
+  {
+   "Model / preprocessing": "mlp / per_survey",
+   "detections (n=4362)": "0.511 \u00b1 0.018",
+   "forced (n=1902)": "0.506 \u00b1 0.015"
+  },
+  {
+   "Model / preprocessing": "mlp / per_survey_drop_absmag",
+   "detections (n=4362)": "0.477 \u00b1 0.019",
+   "forced (n=1902)": "0.456 \u00b1 0.018"
+  },
+  {
+   "Model / preprocessing": "mlp / hybrid",
+   "detections (n=4362)": "0.496 \u00b1 0.013",
+   "forced (n=1902)": "0.492 \u00b1 0.008"
+  }
+ ],
+ "abs_mag_by_class": [
+  {
+   "Class": "SNIa",
+   "PLAsTiCC": "-19.19 [-19.92, -16.62] n=2312",
+   "DES": "-19.77 [-20.44, -19.03] n=391",
+   "ZTF detections": "-19.00 [-19.50, -18.31] n=3381",
+   "ZTF forced": "-19.20 [-19.67, -18.09] n=1374"
+  },
+  {
+   "Class": "SNII",
+   "PLAsTiCC": "-17.34 [-19.52, -15.23] n=1193",
+   "DES": "-17.63 [-18.95, -16.56] n=64",
+   "ZTF detections": "-17.55 [-19.08, -16.28] n=735",
+   "ZTF forced": "-17.52 [-19.09, -15.60] n=409"
+  },
+  {
+   "Class": "SNIbc",
+   "PLAsTiCC": "-17.12 [-18.69, -14.89] n=484",
+   "DES": "-18.16 [-18.76, -17.59] n=16",
+   "ZTF detections": "-17.41 [-18.81, -16.51] n=209",
+   "ZTF forced": "-17.66 [-18.94, -16.02] n=96"
+  },
+  {
+   "Class": "AGN",
+   "PLAsTiCC": "-21.38 [-23.72, -18.47] n=369",
+   "DES": "-21.32 [-23.44, -19.24] n=40",
+   "ZTF detections": "--",
+   "ZTF forced": "--"
+  },
+  {
+   "Class": "SLSN-I",
+   "PLAsTiCC": "-22.64 [-23.98, -20.99] n=175",
+   "DES": "-22.25 [-23.12, -20.52] n=18",
+   "ZTF detections": "-20.91 [-22.17, -20.34] n=37",
+   "ZTF forced": "-20.86 [-22.12, -19.87] n=23"
+  }
+ ]
+}

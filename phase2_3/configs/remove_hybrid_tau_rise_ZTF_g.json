@@ -1,0 +1,26 @@
+{
+ "name": "remove_hybrid_tau_rise_ZTF_g",
+ "phase": "2.3",
+ "status": "diagnostic (uses DES labels)",
+ "model": {
+  "type": "xgboost",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "hybrid",
+ "drop_features": [
+  "tau_rise_ZTF_g"
+ ],
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "description": "Remove tau_rise_ZTF_g, hybrid"
+}

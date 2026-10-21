@@ -1,0 +1,28 @@
+{
+ "phase": "2.2",
+ "preregistration": "PREREGISTRATION_2.2.md (2026-10-19)",
+ "des_label_policy": "corrected",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "record_shift": true,
+ "name": "lightgbm_consistent_sel-random_logistic",
+ "model": {
+  "type": "lightgbm",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "preprocessing": "consistent",
+ "train_selection": {
+  "type": "random_logistic"
+ },
+ "status": "robustness",
+ "description": "LightGBM, consistent, training selection: random_logistic"
+}

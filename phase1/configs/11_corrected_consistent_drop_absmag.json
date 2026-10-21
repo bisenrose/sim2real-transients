@@ -1,0 +1,22 @@
+{
+ "name": "11_corrected_consistent_drop_absmag",
+ "description": "New baseline minus abs_peak_mag",
+ "preprocessing": "consistent",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "model": {
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "drop_features": [
+  "abs_peak_mag"
+ ]
+}
