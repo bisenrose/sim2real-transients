@@ -1,7 +1,9 @@
-# When do label-free fixes for simulation-to-real shift transfer?
+# Transferring photometric transient classifiers from simulations to real surveys
 
-Code, configurations, pre-registrations, tables and figures for the paper *When Do Label-Free Fixes
-for Simulation-to-Real Shift Transfer? A Three-Survey Study of Photometric Transient Classification*.
+Code, configurations, pre-registrations, tables and figures for the paper:
+
+> R. S. Bisen & L. Shree, *Transferring photometric transient classifiers from simulations to real
+> surveys: When do label-free corrections work?* (submitted to Astronomy & Astrophysics)
 
 Classifiers are trained on the PLAsTiCC simulation and evaluated on three real spectroscopic samples
 (DES-SN 5-year, ZTF Bright Transient Survey, YSE DR1). Every experiment is a JSON config run by one
@@ -12,22 +14,23 @@ engine; every table and figure is generated from saved results.
 | Path | Contents |
 | --- | --- |
 | `phase1/` | Engine (`common.py`, `models.py`, `adaptation.py`, `run_experiment.py`), pipeline audit, reproduction of the preliminary pipeline |
-| `phase2/` … `phase8/` | One folder per study phase: `PREREGISTRATION_*.md`, `configs/`, analysis scripts, `tables/`, `figures/`, summary `results/verdicts*.json` |
-| `run_phase2.sh` … `run_phase8.sh` | Run each phase end to end (each first checks that the preliminary pipeline reproduces) |
+| `phase2/` … `phase9/` | One folder per study phase: `PREREGISTRATION_*.md`, `configs/`, analysis scripts, `tables/`, `figures/`, summary `results/verdicts*.json` |
+| `run_phase2.sh` … `run_phase9.sh` | Run each phase end to end (each first checks that the preliminary pipeline reproduces) |
 | `des_superphot_local.py`, `des_scipy_extraction.py`, `extraction/` | Light-curve fitting and feature extraction for PLAsTiCC and DES (ZTF: `phase4/`, YSE: `phase7/`) |
 | `data/` | Download instructions and scripts; `export_splits.py` |
 | `splits/` | Exact object identifiers in every split and target sample |
 
-| Paper section | Phase |
+| Paper content | Phase |
 | --- | --- |
-| Pipeline audit (Appendix) | 1 |
+| Pipeline audit (Appendix A) | 1 |
 | Hybrid rule on DES, simulated selection, shift diagnostics | 2, 2.2, 2.3 |
 | Tuning, baselines, calibration, bootstrap | 3 |
 | ZTF held-out test, label acquisition | 4 |
-| Controlled test, StratLearn, weights, robustness, ρ | 5 |
+| Controlled test, StratLearn, weights, robustness, SHAP rank correlations | 5 |
 | Decomposition, two-factor test, label shift, sample size | 6 |
 | YSE held-out test | 7 |
 | Per-feature shift, stronger controlled test | 8 |
+| Survey-artefact ablation (added after feedback on an earlier version) | 9 |
 
 ## Setup
 
@@ -51,16 +54,30 @@ contain an older HEAD file, so check out this commit rather than a tag.
 ## Reproducing
 
 ```bash
-python phase1/run_experiment.py phase1/configs/00_legacy_reproduction.json   # expect 0.7899 / 0.2193
+python phase1/run_experiment.py phase1/configs/00_legacy_reproduction.json
 bash run_phase2.sh && bash run_phase3.sh && bash run_phase4.sh && bash run_phase5.sh
-bash run_phase6.sh && bash run_phase7.sh && bash run_phase8.sh
+bash run_phase6.sh && bash run_phase7.sh && bash run_phase8.sh && bash run_phase9.sh
 ```
-Full results JSONs (one per config and split seed) are archived separately (see the paper's
-reproducibility statement); the summary verdicts and all tables are in this repository.
+The first command should print `PLAsTiCC F1=0.7899  transfer F1=0.2193`. Full results JSONs (one
+per config and split seed) are archived separately (see the paper's Data availability section); the
+summary verdicts and all tables are in this repository.
 
 ## Pre-registration
 
-Each phase's predictions were written in its `PREREGISTRATION_*.md` before that phase was run. Amendments (Phases 6 and 8) are recorded at the end of those files.
+Each phase's predictions were written in its `PREREGISTRATION_*.md` before that phase was run.
+Amendments (Phases 6 and 8) are recorded at the end of those files. Phase 9 was added after feedback
+on an earlier version of the paper; its predictions were likewise recorded before it was run. The
+paper lists all 67 predictions and their outcomes in its final appendix, noting where it renamed
+IDs (CT, TF, X and SA).
+
+## Citation
+
+If you use this code, please cite the paper (reference to be updated on publication):
+
+```
+Bisen, R. S., & Shree, L. Transferring photometric transient classifiers from simulations to real
+surveys: When do label-free corrections work? Submitted to Astronomy & Astrophysics.
+```
 
 ## License
 
