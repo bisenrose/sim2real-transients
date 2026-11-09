@@ -1,0 +1,28 @@
+{
+ "name": "noart_ztf_mlp_consistent",
+ "phase": "9",
+ "preregistration": "PREREGISTRATION_9.md",
+ "status": "additional analysis (reviewer-requested; predictions recorded before running)",
+ "target": "ztf",
+ "split_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "model": {
+  "type": "mlp",
+  "n_estimators": 250,
+  "max_depth": 5,
+  "learning_rate": 0.05,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8
+ },
+ "drop_features": [
+  "time_span",
+  "t_0_ZTF_g",
+  "t_0_ZTF_r"
+ ],
+ "preprocessing": "consistent"
+}

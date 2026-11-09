@@ -1,0 +1,48 @@
+{
+ "A1_des_hybrid_gt_consistent": [
+  true,
+  true,
+  true,
+  true
+ ],
+ "A2_ztf_hybrid_lt_per_survey": [
+  true,
+  true,
+  true
+ ],
+ "A3_yse_hybrid_lt_per_survey": [
+  true,
+  true,
+  true
+ ],
+ "A4_yse_consistent_best": [
+  true,
+  true,
+  true
+ ],
+ "A5_ztf_brightness_gt_hybrid": [
+  true,
+  true,
+  true
+ ],
+ "A1_des_hybrid_gt_consistent_supported": true,
+ "A2_ztf_hybrid_lt_per_survey_supported": true,
+ "A3_yse_hybrid_lt_per_survey_supported": true,
+ "A4_yse_consistent_best_supported": true,
+ "A5_ztf_brightness_gt_hybrid_supported": true,
+ "domain_auc": {
+  "DES": {
+   "all_features": 1.0,
+   "without_artefacts": 0.9894500975927131
+  },
+  "ZTF": {
+   "all_features": 1.0,
+   "without_artefacts": 0.9997494164794997
+  },
+  "YSE": {
+   "all_features": 1.0,
+   "without_artefacts": 0.9991214630151942
+  }
+ },
+ "A6_auc_without_artefacts_ge_0.95_supported": true
+}
